@@ -22,6 +22,7 @@ dependencies:
   connectivity_plus: ^4.0.2
   http: ^1.1.0 #remote data source
   shared_preferences: ^2.2.0 #local data source
+  internet_connection_checker: ^1.0.0+1
 
 dev_dependencies:
   flutter_test:
