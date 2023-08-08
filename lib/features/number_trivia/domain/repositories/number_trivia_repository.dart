@@ -8,5 +8,5 @@ import 'package:number_trivia_clean_architecture/features/number_trivia/domain/e
 
 abstract class NumberTriviaRepository {
   Future<Either<Failure, NumberTrivia>> getConcreteNumberTrivia(int number); //NumberTrivia as successful object
-  Future<Either<Failure, NumberTrivia>> getRandomNumberTrivia(NumberTrivia tNumberTrivia);
+  Future<Either<Failure, NumberTrivia>> getRandomNumberTrivia(); //It doesn't get any input
 }
