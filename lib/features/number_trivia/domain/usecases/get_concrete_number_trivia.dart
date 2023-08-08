@@ -6,6 +6,8 @@ import 'package:number_trivia_clean_architecture/features/number_trivia/domain/r
 
 import '../../../../core/error/failure.dart';
 
+//According to abstract UseCase class, we have to define the type of our entity
+//And secondly we have to define the type of parameter (Again due to UseCase)
 class GetConcreteNumberTrivia implements UseCase<NumberTrivia, Params> {
   final NumberTriviaRepository repository;
 
