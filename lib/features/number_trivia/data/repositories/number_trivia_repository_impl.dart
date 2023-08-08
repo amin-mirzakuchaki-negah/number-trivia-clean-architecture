@@ -17,7 +17,7 @@ class NumberTriviaRepositoryImpl implements NumberTriviaRepository {
     required this.remoteDataSource,
     required this.localDataSource,
     required this.networkInfo,
-  });
+  }); //I think instructor added these properties for test and all of which are no needed
 
 
   @override
