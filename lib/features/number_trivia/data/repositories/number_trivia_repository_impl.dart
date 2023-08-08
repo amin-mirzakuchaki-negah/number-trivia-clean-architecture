@@ -5,12 +5,8 @@ import 'package:number_trivia_clean_architecture/features/number_trivia/domain/r
 
 class NumberTriviaRepositoryImpl implements NumberTriviaRepository {
   @override
-  Future<Either<Failure, NumberTrivia>> getConcreteNumberTrivia(int number) {
-    throw UnimplementedError();
-  }
+  Future<Either<Failure, NumberTrivia>> getConcreteNumberTrivia(int number) => throw UnimplementedError();
 
   @override
-  Future<Either<Failure, NumberTrivia>> getRandomNumberTrivia() {
-    throw UnimplementedError();
-  }
+  Future<Either<Failure, NumberTrivia>> getRandomNumberTrivia() => throw UnimplementedError();
 }
