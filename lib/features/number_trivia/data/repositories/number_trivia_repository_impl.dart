@@ -1,0 +1,3 @@
+import 'package:number_trivia_clean_architecture/features/number_trivia/domain/repositories/number_trivia_repository.dart';
+
+class NumberTriviaRepositoryImpl implements NumberTriviaRepository {}
