@@ -1,6 +1,4 @@
 import 'package:dartz/dartz.dart';
-
-import '../../features/number_trivia/domain/entities/number_trivia.dart';
 import '../error/failure.dart';
 
 abstract class UseCase<Type, Params> {
