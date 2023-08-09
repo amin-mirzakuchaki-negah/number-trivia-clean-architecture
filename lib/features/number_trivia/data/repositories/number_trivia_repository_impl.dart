@@ -4,7 +4,7 @@ import 'package:number_trivia_clean_architecture/core/error/failure.dart';
 import 'package:number_trivia_clean_architecture/features/number_trivia/domain/entities/number_trivia.dart';
 import 'package:number_trivia_clean_architecture/features/number_trivia/domain/repositories/number_trivia_repository.dart';
 
-import '../../../../core/platform/network_info.dart';
+import '../../../../core/network/network_info.dart';
 import '../datasources/number_trivia_local_data_source.dart';
 import '../datasources/number_trivia_remote_data_source.dart';
 import '../models/number_trivia_model.dart';
