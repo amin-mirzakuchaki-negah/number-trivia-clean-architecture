@@ -1,7 +1,9 @@
 import 'package:dartz/dartz.dart';
+import 'package:injectable/injectable.dart';
 
 import '../error/failure.dart';
 
+@lazySingleton
 class InputConvertor {
   Either<Failure, int> stringToUnsignedInt(String str) {
     try {

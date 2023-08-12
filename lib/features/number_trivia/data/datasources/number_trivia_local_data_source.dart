@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:injectable/injectable.dart';
 import 'package:number_trivia_clean_architecture/core/error/exceptions.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -12,6 +13,7 @@ abstract class NumberTriviaLocalDataSource {
 
 String CACHED_NUMBER_TRIVIA = "CACHED_NUMBER_TRIVIA";
 
+@LazySingleton(as: NumberTriviaLocalDataSource)
 class NumberTriviaLocalDataSourceImpl implements NumberTriviaLocalDataSource {
   final SharedPreferences sharedPreferences;
 
