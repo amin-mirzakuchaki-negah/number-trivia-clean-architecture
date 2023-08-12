@@ -27,3 +27,6 @@ class NumberTriviaFailureState extends NumberTriviaState {
   @override
   List<Object?> get props => [message];
 }
+class NumberTriviaCacheFailureState extends NumberTriviaState {
+  const NumberTriviaCacheFailureState();
+}
