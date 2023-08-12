@@ -20,15 +20,15 @@ class NumberTriviaBloc extends Bloc<NumberTriviaEvent, NumberTriviaState> {
   })  : _getConcreteNumberTrivia = getConcreteNumberTrivia,
         _getRandomNumberTrivia = getRandomNumberTrivia,
         super(NumberTriviaInitial()) { //Initializing our bloc
-    on<GetConcreteNumberTriviaEvent>(_onGetNumberTriviaConcreteEvent);
-    on<RandomGetNumberTriviaEvent>(_onGetNumberTriviaRandomEvent);
+    on<GetConcreteNumberTriviaEvent>(_onGetConcreteNumberTriviaEvent);
+    on<RandomGetNumberTriviaEvent>(_onGetRandomNumberTriviaEvent);
   }
-  Future<void> _onGetNumberTriviaConcreteEvent(
+  Future<void> _onGetConcreteNumberTriviaEvent(
     GetConcreteNumberTriviaEvent event,
     Emitter<NumberTriviaState> emit,
   ) async {}
 
-  Future<void> _onGetNumberTriviaRandomEvent(
+  Future<void> _onGetRandomNumberTriviaEvent(
     RandomGetNumberTriviaEvent event,
     Emitter<NumberTriviaState> emit,
   ) async {
