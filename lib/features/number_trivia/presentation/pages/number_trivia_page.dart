@@ -36,7 +36,7 @@ class NumberTriviaPage extends StatelessWidget {
                       return MessageDisplay(message: state.message ?? "Something went wrong");
                     }
                     else if(state is NumberTriviaSuccessState) {
-                      return Text('dfe');
+                      return TriviaDisplay(numberTrivia: state.response);
                     }
                   },
                 ),
