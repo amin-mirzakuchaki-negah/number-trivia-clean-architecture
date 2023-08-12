@@ -37,7 +37,7 @@ class NumberTriviaBloc extends Bloc<NumberTriviaEvent, NumberTriviaState> {
         await _getRandomNumberTrivia(const NoParams()); //usecase call
     final newState = await result.fold(
       (failure) async => failure.toState,
-      (response) async => NumberTriviaSuccessState(response),
+      (response) async => NumberTriviaSuccessState(response: response),
     );
     emit(newState);
   }
