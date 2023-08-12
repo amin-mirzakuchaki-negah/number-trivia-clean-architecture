@@ -9,7 +9,7 @@ import 'injection_container.config.dart';
 final getIt = GetIt.instance;
 
 @injectableInit
-void init() => getIt.init();
+Future<void> init() => getIt.init();
 
 
 
