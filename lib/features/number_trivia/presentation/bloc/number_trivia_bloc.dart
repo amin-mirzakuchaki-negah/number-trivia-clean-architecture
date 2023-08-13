@@ -33,7 +33,7 @@ class NumberTriviaBloc extends Bloc<NumberTriviaEvent, NumberTriviaState> {
         super(NumberTriviaInitial()) {
     //Initializing our bloc
     on<GetConcreteNumberTriviaEvent>(_onGetConcreteNumberTriviaEvent);
-    on<RandomGetNumberTriviaEvent>(_onGetRandomNumberTriviaEvent);
+    on<GetRandomNumberTriviaEvent>(_onGetRandomNumberTriviaEvent);
   }
   Future<void> _onGetConcreteNumberTriviaEvent(
     GetConcreteNumberTriviaEvent event,
@@ -54,7 +54,7 @@ class NumberTriviaBloc extends Bloc<NumberTriviaEvent, NumberTriviaState> {
   }
 
   Future<void> _onGetRandomNumberTriviaEvent(
-    RandomGetNumberTriviaEvent event,
+    GetRandomNumberTriviaEvent event,
     Emitter<NumberTriviaState> emit,
   ) async {
     emit(NumberTriviaLoadingState());
