@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:number_trivia_clean_architecture/features/number_trivia/domain/usecases/get_random_number_trivia.dart';
 
 import '../../../../injection_container.dart';
 import '../bloc/number_trivia_bloc.dart';
@@ -13,7 +12,6 @@ class NumberTriviaPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
     return Scaffold(
         appBar: AppBar(
           title: const Text('Number Trivia'),
@@ -24,7 +22,7 @@ class NumberTriviaPage extends StatelessWidget {
             padding: EdgeInsets.all(10.0),
             child: Column(
               children: [
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 //Top Half
                 BlocBuilder<NumberTriviaBloc, NumberTriviaState>(
                   builder: (context, state) {
@@ -48,7 +46,7 @@ class NumberTriviaPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
                 //Bottom Half
-                BottomHalf(),
+                const BottomHalf(),
               ],
             ),
           ),
